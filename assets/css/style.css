@@ -30,12 +30,12 @@
     margin-top: 162px;
 }
 
-.pl-100 {
-    padding-left: 216px;
+.ml-75 {
+    margin-left: 75px;
 }
 
-.ml-167 {
-    margin-left: 167px;
+.pl-100 {
+    padding-left: 216px;
 }
 
 .mt-20 {
@@ -202,8 +202,6 @@
     top: 47%;
     transform: rotate(270deg);
     font-family: Helvetica;
-    font-size: 32px;
-    font-weight: 400;
     line-height: 35.2px;
     color: #00171F;
     white-space: nowrap;
@@ -247,8 +245,6 @@
 
 .small-card-heading {
     font-family: Helvetica;
-    font-size: 32px;
-    font-weight: 400;
     line-height: 35.2px;
     text-align: left;
     color: #FFFFFF;
@@ -257,8 +253,6 @@
 
 .small-card-description {
     font-family: Helvetica;
-    font-size: 16px;
-    font-weight: 400;
     line-height: 25.6px;
     text-align: left;
     max-width: 286px;
@@ -328,6 +322,18 @@
         padding-right: 12px;
     }
 
+    .col-lg-5 {
+        width: 41.66%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .col-lg-7 {
+        width: 58.33%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
     .flex-colom {
         flex-direction: column;
     }
@@ -352,10 +358,6 @@
 
     .pt-306 {
         padding-top: 306px;
-    }
-
-    .m-lg-0 {
-        margin: 0;
     }
 
 }
