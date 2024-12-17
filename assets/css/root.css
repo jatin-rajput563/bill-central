@@ -1,0 +1,49 @@
+:root {
+    --fs-16: 16px;
+    --fs-24: 24px;
+    --fs-38: 38px;
+    --fs-48: 48px;
+    --fs-64: 64px;
+    /* ======font-weight====== */
+    --fw-400: 400;
+    --fw-700: 700;
+
+}
+
+.fs-16 {
+    font-size: var(--fs-16);
+}
+
+.fs-24 {
+    font-size: var(--fs-24);
+}
+
+.fs-38 {
+    font-size: var(--fs-38);
+}
+
+.fs-48 {
+    font-size: var(--fs-48);
+}
+
+.fs-64 {
+    font-size: var(--fs-64);
+}
+
+/* ======font-weight====== */
+.fw-400 {
+    font-weight: var(--fw-400);
+}
+
+.fw-700 {
+    font-weight: var(--fw-700);
+}
+
+/* ==============responsive============== */
+@media (max-width:450px) {
+    :root {
+        --fs-38: 25px;
+        --fs-48: 30px;
+        --fs-64: 40px;
+    }
+}
