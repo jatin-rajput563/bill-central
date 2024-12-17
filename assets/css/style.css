@@ -34,6 +34,10 @@
     padding-left: 216px;
 }
 
+.ml-167 {
+    margin-left: 167px;
+}
+
 .mt-20 {
     padding-top: 20px;
 }
@@ -147,6 +151,120 @@
     list-style: disc;
 }
 
+.sec-3-head {
+    font-family: Helvetica;
+    line-height: 52.8px;
+}
+
+.sec-3-para {
+    max-width: 610px;
+    font-family: Helvetica;
+    line-height: 25.6px;
+    color: #5D5D5D;
+}
+
+.sec-3-iamges {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec-3-card {
+    overflow: hidden;
+}
+
+.sec-3-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #EAF9FF;
+    opacity: 94%;
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.sec-3-card:hover::before {
+    opacity: 0;
+    transform: translateY(-10%);
+}
+
+.sec-3-card:hover .sec-3-card-up-text {
+    display: none;
+    transform: translateY(-10%);
+}
+
+.sec-3-card-up-text {
+    position: absolute;
+    top: 47%;
+    transform: rotate(270deg);
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35.2px;
+    color: #00171F;
+    white-space: nowrap;
+    transition: opacity 1s ease;
+}
+
+.up-text-1 {
+    left: -25%;
+}
+
+.up-text-2 {
+    left: 6%;
+}
+
+.up-text-3 {
+    left: 20%;
+}
+
+.up-text-4 {
+    left: 0%;
+}
+
+.ms-3 {
+    margin-right: 3px;
+}
+
+.text-card {
+    padding: 32px;
+    background-color: #003459;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: transform 1s ease;
+}
+
+.sec-3-card:hover .text-card {
+    transform: translateY(0%);
+}
+
+.small-card-heading {
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35.2px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+
+.small-card-description {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+    max-width: 286px;
+    color: #ffffff;
+}
+
 @media (max-width:991.98px) {
     .links {
         flex-direction: column;
@@ -210,18 +328,6 @@
         padding-right: 12px;
     }
 
-    .col-lg-5 {
-        width: 41.66%;
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    .col-lg-7 {
-        width: 58.33%;
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
     .flex-colom {
         flex-direction: column;
     }
@@ -247,6 +353,11 @@
     .pt-306 {
         padding-top: 306px;
     }
+
+    .m-lg-0 {
+        margin: 0;
+    }
+
 }
 
 @media (max-width:768px) {

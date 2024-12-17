@@ -20,12 +20,12 @@
                     <img src="./assets/image/svg/logo.png" alt="logo">
                 </div>
                 <input type="checkbox" id="openslider" hidden>
-                <label for="openslider">
+                <label for="openslider" id="sliderButton">
                     <span></span>
                     <span></span>
                     <span></span>
                 </label>
-                <div class="links d-flex align-items-center justify-content-between w-100 ">
+                <div class="links d-flex align-items-center w-100 ">
                     <ul
                         class="d-flex gap-24  text-center d-flex align-items-center justify-content-center pl-100 flex-colom padding-0">
                         <li><a class="text-decoration-none nav-links text-white fs-16 fw-400" href="#">About</a>
@@ -44,7 +44,7 @@
                     <ul>
                         <li>
                             <button type="button"
-                                class="get-btn justify-content-center align-items-center d-flex fs-16 fw-700">Get
+                                class="get-btn justify-content-center align-items-center d-flex fs-16 fw-700 ml-167 m-lg-0">Get
                                 Started
                                 <svg class="ml-9" width="15" height="15" viewBox="0 0 15 15" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -59,11 +59,14 @@
             <div class="row">
                 <div class="col-12 col-lg-6 text-lg-center">
                     <div class="mt-122">
-                        <h1 class="fs-64 fw-400 text-white main-head justify-content-center text-left text-center-md ml-37 ln-44">Easily Compare
+                        <h1
+                            class="fs-64 fw-400 text-white main-head justify-content-center text-left text-center-md ml-37 ln-44">
+                            Easily Compare
                             <span class="fs-64 fw-700"> Energy, Gas,
                                 and Internet</span> Plans
                         </h1>
-                        <p class="head-para text-grey text-left text-center-md ml-88">Find and switch to the best energy, gas, and internet
+                        <p class="head-para text-grey text-left text-center-md ml-88">Find and switch to the best
+                            energy, gas, and internet
                             plans with
                             ease. Our platform simplifies
                             your search, letting you compare providers and make informed decisions, all in one place.
@@ -208,9 +211,88 @@
             </div>
         </div>
     </section>
+    <!-- ===========section-3=========== -->
+    <section>
+        <div>
+            <h1 class="fs-48 fw-400 text-center sec-3-head">
+                Simple Steps to <span class="fw-700">Switch</span>
+            </h1>
+            <p class="fs-16 fw-400 text-center sec-3-para mx-auto">Lorem ipsum dolor sit amet consectetur. Semper vitae
+                nullam
+                eget consectetur mi. Vulputate sapien a a
+                bibendum</p>
+        </div>
+        <div class="sec-3-iamges">
+            <div class="sec-3-card position-relative">
+                <h2 class="sec-3-card-up-text up-text-1">1. Enter Your Location and Preferences</h2>
+                <img src="assets/image/sec-3-map-img.png" alt="img">
+                <div class="text-card">
+                    <h3 class="small-card-heading">1. Enter Your Location and Preferences</h3>
+                    <p class="small-card-description">Complete the process in just a few clicks. We’ll handle the rest
+                        and ensure a smooth transition
+                        to your new provider.</p>
+                </div>
+            </div>
+            <div class="sec-3-card position-relative">
+                <h2 class="sec-3-card-up-text up-text-2">2. Compare Providers</h2>
+                <img src="assets/image/sec-3-black-img.png" alt="img">
+                <div class="text-card">
+                    <h3 class="small-card-heading">2. Compare Providers</h3>
+                    <p class="small-card-description">Complete the process in just a few clicks. We’ll handle the rest
+                        and ensure a
+                        smooth transition
+                        to your new provider.</p>
+                </div>
+            </div>
+            <div class="sec-3-card position-relative">
+                <h2 class="sec-3-card-up-text up-text-3">3. Switch Easily</h2>
+                <img src="assets/image/sec-3-girl-img.png" alt="img">
+                <div class="text-card">
+                    <h3 class="small-card-heading">3. Switch Easily</h3>
+                    <p class="small-card-description">Complete the process in just a few clicks. We’ll handle the rest
+                        and ensure a
+                        smooth transition
+                        to your new provider.</p>
+                </div>
+            </div>
+            <div class="sec-3-card position-relative">
+                <h2 class="sec-3-card-up-text up-text-4">4. Choose the Best Plan</h2>
+                <img src="assets/image/sec-3-pen-img.png" alt="img">
+                <div class="text-card">
+                    <h3 class="small-card-heading">4. Choose the Best Plan</h3>
+                    <p class="small-card-description">Complete the process in just a few clicks. We’ll handle the rest
+                        and ensure a
+                        smooth transition
+                        to your new provider.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script>
+        let isFixed = false; // Track the current position state
+
+        document.getElementById('sliderButton').addEventListener('click', function () {
+            if (isFixed) {
+                // If currently fixed, change to absolute
+                this.style.position = 'absolute';
+                this.style.top = '30px'; // Reset top
+                this.style.left = 'initial'; // Reset left
+                this.style.bottom = '20px'; // Position it 20px from the bottom
+                this.style.right = '15px'; // Position it 20px from the right
+            } else {
+                // If currently absolute, change to fixed
+                this.style.position = 'fixed';
+                this.style.top = '30px'; // Reset top
+                this.style.left = 'initial'; // Reset left
+                this.style.bottom = '20px'; // Position it 20px from the bottom
+                this.style.right = '15px'; // Position it 20px from the right
+            }
+            isFixed = !isFixed; // Toggle the state
+        });
+    </script>
 </body>
 
 </html>

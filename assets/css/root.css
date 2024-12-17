@@ -1,6 +1,7 @@
 :root {
     --fs-16: 16px;
     --fs-24: 24px;
+    --fs-32: 32px;
     --fs-38: 38px;
     --fs-48: 48px;
     --fs-64: 64px;
@@ -16,6 +17,10 @@
 
 .fs-24 {
     font-size: var(--fs-24);
+}
+
+.fs-32 {
+    font-size: var(--fs-32);
 }
 
 .fs-38 {
